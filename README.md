@@ -1,4 +1,5 @@
-#Admin Panel
+Admin Panel
+===========
 
 This application is a mixture of Node.js/Express and AngularJS
 applications.
