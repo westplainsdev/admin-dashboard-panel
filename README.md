@@ -10,4 +10,4 @@ To run the application, from the command line run:
 To launch the application, again from the command line:
 `npm start`
 
-The application is configured to run on `Port 3000`
+The application is configured to run on `Port 3010`
