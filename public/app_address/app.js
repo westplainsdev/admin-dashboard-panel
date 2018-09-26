@@ -1,4 +1,5 @@
 // app.js
+// @ts-ignore
 var addressApp = angular.module('addressApp', ['ui.router']);
 
 addressApp.config(function($stateProvider, $urlRouterProvider) {
