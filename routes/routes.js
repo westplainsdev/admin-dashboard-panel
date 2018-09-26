@@ -6,7 +6,8 @@ module.exports = {
 
         // Default routes for the entire application to launch.
         app.get('/', function(req, res){
-            res.render('index', { title: 'Dashboard' });
+            var data = { title: 'Dashboard', dashboard: true };
+            res.render('index', data);
         });
 
         app.get('/license', function(req, res){
