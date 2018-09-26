@@ -1,7 +1,7 @@
 module.exports = {
     register: function (app) {
         app.get('/address', function (req, res){
-            var data = { description: 'AngularJS address book example application.', address: true, title: 'Address Book'}
+            var data = { description: 'AngularJS address book example application.', book: true, title: 'Address Book'}
             res.render('apps/address', data);
         });
 
