@@ -18,9 +18,10 @@ h1.page-header {
     margin-top: -20px;
 }
 
+.content {min-height: 760px;
+}
 .footer {
     width: 100%;
-    position: relative;
     bottom: 0;
 }  
 
