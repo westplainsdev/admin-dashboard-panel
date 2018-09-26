@@ -85,12 +85,12 @@ module.exports = {
 
             var data = { user:
                 {
-                    firstname:'Jane',
-                    lastname:'Bishop',
+                    firstname:'Generic',
+                    lastname:'User',
                     company:'Some Cool Vendor',
-                    email:'janesemail@contractor.hallmark.com',
+                    email:'generic_user@example.com',
                     timeZone: 'Central Time (US &amp; Canada)',
-                    username:'janeuser',
+                    username:'generic_user',
                     password: '11111122333'
                 },
                 about: true,
