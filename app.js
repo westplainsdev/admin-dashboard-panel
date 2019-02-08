@@ -1,21 +1,18 @@
-var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
+const express = require('express');
+const path = require('path');
+const favicon = require('serve-favicon');
+const logger = require('morgan');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
 
-// var routes = require('./routes/index');
-// var users = require('./routes/users');
+const routes = require('./routes/routes');
+const applications = require('./routes/applications');
+const apis = require('./routes/api');
 
-var routes = require('./routes/routes');
-var applications = require('./routes/applications');
-var apis = require('./routes/api');
-
-var app = express();
+const app = express();
 
 // partials directory setup
-var hbs = require('hbs');
+const hbs = require('hbs');
 hbs.registerPartials(__dirname + '/views/apps');
 hbs.registerPartials(__dirname + '/views/partials');
 
