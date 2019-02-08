@@ -4,22 +4,22 @@
 <head>
     <meta charset="utf-8" />
     <title>Enterprise Software Dashboard</title>
-<!-- links -->
+    <!-- links -->
     <!-- Bootstrap Core CSS -->
     <link href="formating/css/bootstrap.min.css" rel="stylesheet">
-     <!-- Custom CSS -->
-     <link href="formating/dashboard/theme.css" rel="stylesheet">
-     <link href="formating/dashboard/style.css" rel="stylesheet">
-     
+    <!-- Custom CSS -->
+    <link href="formating/dashboard/theme.css" rel="stylesheet">
+    <link href="formating/dashboard/style.css" rel="stylesheet">
+
     <!-- Custom Fonts -->
     <link href="formating/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<!-- scripts -->
+    <!-- scripts -->
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-   
+
     <!-- 3rd party libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.js"></script>
@@ -31,7 +31,8 @@
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -40,12 +41,13 @@
 
                 <a class="navbar-brand" href="/">Enterprise Software</a>
 
-              
+
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <form class="navbar-form navbar-left" method="GET" role="search">
-                    <div class="form-group"><input type="text" name="q" class="form-control" placeholder="Search" /></div>
+                    <div class="form-group"><input type="text" name="q" class="form-control" placeholder="Search" />
+                    </div>
                     <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
                 </form>
                 <ul class="nav navbar-nav navbar-right">
@@ -56,7 +58,8 @@
                                 <div class="navbar-content">
                                     <div class="row">
                                         <div class="col-md-5">
-                                            <img src="http://placehold.it/120x120" alt="Alternate Text" class="img-responsive" />
+                                            <img src="https://via.placeholder.com/120" alt="Alternate Text"
+                                                class="img-responsive" />
                                             <p class="text-center small">
                                                 <a href="/myprofile">Change Photo</a>
                                             </p>
@@ -94,41 +97,49 @@
     <div class="container-fluid main-container">
         <div class="col-md-2 sidebar">
             <ul class="nav nav-pills nav-stacked admin-menu">
-                <li class="{{#if dashboard}}active{{/if}}"><a href="/"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a></li>
-                <li class="{{#if simple}}active{{/if}}"><a href='/simple'><i class="fa fa-file-o fa-fw"></i> Simple example</a></li>
-                <li class="{{#if complex}}active{{/if}}"><a href='/complex'><i class="fa fa-table fa-fw"></i> Complex example</a></li>
-                <li class="{{#if loop}}active{{/if}}"><a href='/loop'><i class="fa fa-repeat fa-fw"></i> Loop example</a></li>
-                <li class="{{#if logic}}active{{/if}}"><a href='/logic'><i class="fa fa-cogs fa-fw"></i> Logic example</a></li>
-                <li class="{{#if book}}active{{/if}}"><a href="/address"><i class="fa fa-envelope-o fa-fw"></i> Address Book</a></li>               
-                <li class="{{#if shop}}active{{/if}}"><a href="/shop"><i class="fa fa-shopping-cart fa-fw"></i> Shopping Cart</a></li>
-                <li class="{{#if shows}}active{{/if}}"><a href="/shows"><i class="fa fa-th"></i> Master / Details</a></li>
-                <li class="{{#if grades}}active{{/if}}"><a href="/grades"><i class="fa fa-graduation-cap fa-fw"></i> Grade Book</a> </li>
-                <li class="{{#if chance}}active{{/if}}"><a href="/chance"><i class="fa fa-info fa-fw"></i> Random Info</a></li>
-             </ul>
+                <li class="{{#if dashboard}}active{{/if}}"><a href="/"><i class="fa fa-fw fa-dashboard"></i>
+                        Dashboard</a></li>
+                <li class="{{#if simple}}active{{/if}}"><a href='/simple'><i class="fa fa-file-o fa-fw"></i> Simple
+                        example</a></li>
+                <li class="{{#if complex}}active{{/if}}"><a href='/complex'><i class="fa fa-table fa-fw"></i> Complex
+                        example</a></li>
+                <li class="{{#if loop}}active{{/if}}"><a href='/loop'><i class="fa fa-repeat fa-fw"></i> Loop
+                        example</a></li>
+                <li class="{{#if logic}}active{{/if}}"><a href='/logic'><i class="fa fa-cogs fa-fw"></i> Logic
+                        example</a></li>
+                <li class="{{#if book}}active{{/if}}"><a href="/address"><i class="fa fa-envelope-o fa-fw"></i> Address
+                        Book</a></li>
+                <li class="{{#if shop}}active{{/if}}"><a href="/shop"><i class="fa fa-shopping-cart fa-fw"></i> Shopping
+                        Cart</a></li>
+                <li class="{{#if shows}}active{{/if}}"><a href="/shows"><i class="fa fa-th"></i> Master / Details</a>
+                </li>
+                <li class="{{#if grades}}active{{/if}}"><a href="/grades"><i class="fa fa-graduation-cap fa-fw"></i>
+                        Grade Book</a> </li>
+                <li class="{{#if chance}}active{{/if}}"><a href="/chance"><i class="fa fa-info fa-fw"></i> Random
+                        Info</a></li>
+            </ul>
         </div>
         <div class="col-md-10 content">
-             {{{body}}}
+            {{{body}}}
         </div>
         <footer class="pull-left footer">
             <p class="col-md-12"></p>
-            <hr class="divider" /> Copyright  &copy; <span id="copyrightDate"></span>
+            <hr class="divider" /> Copyright &copy; <span id="copyrightDate"></span>
             <a href="https://github.com/westplainsdev">West Plains Develpment</a>
             <p></p>
         </footer>
     </div>
-    
+
     <!-- footer copyright date script -->
-     <script>
-        (function() {
-             let target = document.getElementById("copyrightDate");
-             let date = new Date();
-             let yearDisplay = date.getFullYear();
-             target.innerHTML = yearDisplay;
-         })();
-     </script>    
-   
+    <script>
+        (function () {
+            let target = document.getElementById("copyrightDate");
+            let date = new Date();
+            let yearDisplay = date.getFullYear();
+            target.innerHTML = yearDisplay;
+        })();
+    </script>
+
 </body>
 
 </html>
-
-
